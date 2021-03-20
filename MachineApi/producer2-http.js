@@ -1,7 +1,6 @@
 const server = require('fastify')();
-
 const HOST = process.env.HOST || '127.0.0.1';
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4001;
 
 console.log(`worker pid=${process.pid}`);
 
@@ -18,8 +17,8 @@ server.get('/wakeup-call/:id', async(req, reply) => {
     return {
         producer_pid: process.pid,
         machine: {
-            __id: 1,
-            name: 'machine-1',
+            __id: 2,
+            name: 'machine-2',
             weight: Math.floor(Math.random() * 101)
         }
     }

@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "fastify": "^3.2.1",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.1"
   }
 }
